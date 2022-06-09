@@ -2,16 +2,16 @@
 // ex: addTwo(5); -> 7
 // ex: addTwo(6); -> 8
 function addTwo(number) {
-  // CODE HERE
-
+  // returns num + 2
+  return number + 2;
 }
-
+console.log(addTwo(0));
 
 // adds the two inputted numbers together
 // ex: add(5, 10); -> 15
 function add(num1, num2) {
-  // CODE HERE
-
+  // returns num1 plus num2
+  return num1 + num2
 }
 
 
@@ -19,16 +19,16 @@ function add(num1, num2) {
 // ex: addd(1,2,3); -> 6
 // ex: addd(2,4,2); -> 8
 function addd(value1, value2, value3) {
-  // CODE HERE
-
+  // returns all inputs added together
+  return value1 + value2 + value3
 }
 
 
 // subtracts the second inputted number from the first inputted number
 // ex: subtract(5, 10); -> -5
 function subtract(n1, n2) {
-  // CODE HERE
-
+  //returns n1-n2
+  return n1 - n2
 }
 
 
@@ -37,7 +37,7 @@ function subtract(n1, n2) {
 // ex: multiplyByTwo(6); -> 12
 function multiplyByTwo(numero) {
   // CODE HERE
-
+  return numero * 2
 }
 
 
@@ -46,7 +46,7 @@ function multiplyByTwo(numero) {
 // ex: multiply(2,2); -> 4
 function multiply(val1, val2) {
   // CODE HERE
-
+  return val1 * val2
 }
 
 
@@ -55,7 +55,7 @@ function multiply(val1, val2) {
 // ex: multiplyy(2,2,3); -> 12
 function multiplyy(a, b, c) {
   // CODE HERE
-
+  return a * b * c
 }
 
 
@@ -63,7 +63,7 @@ function multiplyy(a, b, c) {
 // ex: square(5); -> 25
 function square(value) {
   // CODE HERE
-
+  return Math.pow(value, 2)
 }
 
 
@@ -74,7 +74,8 @@ function square(value) {
 // ex: isOdd(5); -> true
 function isOdd(num) {
   // CODE HERE
-
+  if (num % 2 === 1) return true
+  else return false
 }
 
 
@@ -86,7 +87,8 @@ function isOdd(num) {
 // ex: isNegative(0); -> false
 function isNegative(num) {
   // CODE HERE
-
+  if (num < 0) return true
+  else return false
 }
 
 
@@ -95,7 +97,7 @@ function isNegative(num) {
 // ex: positive(1); -> 1
 function positive(num) {
   // CODE HERE
-
+  return Math.abs(num)
 }
 
 // Returns boolean of whether argument is classified as a Number object
@@ -103,7 +105,8 @@ function positive(num) {
 // isNumber('hi'); → false
 function isNumber(value) {
   // CODE HERE
-
+  if(typeof value === 'number') return true
+  else return false
 }
 
 // Returns boolean of whether argument is classified as an Array object
@@ -111,7 +114,7 @@ function isNumber(value) {
 // isArray([1,2,3]); → true
 function isArray(value) {
   // CODE HERE
-
+  return Array.isArray(value)
 }
 
 // Returns boolean of whether argument is classified as an Object
@@ -119,7 +122,8 @@ function isArray(value) {
 // isObject([1,2,3]); → true
 function isObject(value) {
   // CODE HERE
-
+  if (typeof value === 'object') return true
+  else return false
 }
 
 // return boolean of whether argument is classified as null
@@ -127,6 +131,7 @@ function isObject(value) {
 // isNull(5); -> false
 function isNull(value) {
   // CODE HERE
-
+  if (value === null) return true
+  else return false
 }
 
